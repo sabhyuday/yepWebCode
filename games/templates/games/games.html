@@ -1,0 +1,58 @@
+{% extends "games/base.html" %}
+{% load static %}
+{% block content %}
+<h1>Games</h1>
+
+<body>
+  <div class="card-group">
+    <div class="card"><img src="{% static 'Car/game8.jpg' %}" class="card-img-top w-100 d-block">
+      <div class="card-body">
+        <h4 class="card-title">Color Switch</h4>
+        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac
+          facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><a
+          class="btn btn-primary" href="{% url 'games6' %}" type="button">Play Now!</a>
+      </div>
+    </div>
+    <div class="card"><img src="{% static 'Car/game7.jpg' %}" class="card-img-top w-100 d-block">
+      <div class="card-body">
+        <h4 class="card-title">Block Breaker</h4>
+        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac
+          facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+          <a class="btn btn-primary" href="{% url 'games4' %}" type="button">Play Now!</a>
+      </div>
+    </div>
+    <div class="card"><img src="{% static 'Car/game3.jpg' %}" class="card-img-top w-100 d-block">
+      <div class="card-body">
+        <h4 class="card-title">Flappy Bird</h4>
+        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac
+          facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><a
+          class="btn btn-primary" type="button">Play Now!</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-group">
+    <div class="card"><img src="{% static 'Car/game2.jpg' %}" class="card-img-top w-100 d-block">
+      <div class="card-body">
+        <h4 class="card-title">Zombie Shooter</h4>
+        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac
+          facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button
+          class="btn btn-primary" type="button">Play Now!</button>
+      </div>
+    </div>
+    <div class="card"><img src="{% static 'Car/Untitled.png' %}" class="card-img-top w-100 d-block">
+      <div class="card-body">
+        <h4 class="card-title">Zombie Runner</h4>
+        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac
+          facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><a
+          class="btn btn-primary" type="button" target="_blank" href="{% url 'games1' %}">Play Now!</a>
+          <br>
+          <br>
+          <a class="btn btn-success" target="_blank" type="button" href="https://drive.google.com/file/d/1ndJjsElwcxsQ6lFcApNauo6xGIVsViYN/view?usp=sharing">Totorial</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+{% endblock content %}
